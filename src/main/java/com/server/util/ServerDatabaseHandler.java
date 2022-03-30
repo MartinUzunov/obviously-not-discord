@@ -22,7 +22,7 @@ public class ServerDatabaseHandler {
         if (instance == null) {
             instance = new ServerDatabaseHandler();
             try {
-                connection = DriverManager.getConnection("jdbc:mysql://79.98.104.180:" + databaseCredentials.getPort() + "/" +
+                connection = DriverManager.getConnection("jdbc:mysql://localhost:" + databaseCredentials.getPort() + "/" +
                         databaseCredentials.getDatabaseName(), databaseCredentials.getName(), databaseCredentials.getPassword());
             } catch (Exception e) {
                 Log.error(e);

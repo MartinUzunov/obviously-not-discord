@@ -20,18 +20,6 @@ public class Main extends Application {
         launch();
     }
 
-    public static void home(Stage stage) {
-        UserSession.getInstance(new User("martiuz", null, null, null));
-        UserSession.getInstance().getUser().setImage(new Image("com/ong/images/no_profile.png"));
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("Views/Homepage.fxml"));
-        ScreenController screenController = ScreenController.getInstance(stage);
-        screenController.addScreen("Homepage", fxmlLoader);
-        ScreenController.getInstance().addController("Homepage", fxmlLoader.getController());
-        screenController.activate("Homepage");
-        screenController.setMaximized(true);
-        ScreenController.getInstance().setMinimumDimensions(645, 440);
-    }
-
     public static void login(Stage stage) {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("Views/SignIn.fxml"));
         ScreenController screenController = ScreenController.getInstance(stage);
@@ -48,7 +36,6 @@ public class Main extends Application {
         mainStage = stage;
         initialize(stage);
         login(stage);
-//        home(stage);
         stage.getScene().getStylesheets().add(getClass().getResource("CSS/global.css").toExternalForm());
 
     }
@@ -59,15 +46,3 @@ public class Main extends Application {
         stage.setOnCloseRequest(event -> System.exit(0));
     }
 }
-
-/* TODO:
- *   Close interface refactor?
- *   CSS refactor and styling
- * */
-
-/** DONE:
- *
- * Session
- * Client
- * Core
- */
