@@ -1,4 +1,4 @@
-# obviously-not-discord
+# Obviously Not Discord
 
 A fully functional Discord clone implemented in Java with the help of the JavaFX library. The application implements the Client-Server model and is using MySQL as a database. The user can create an account or log in if an account already exists, add other users as friends, create groups, invite users to the group, add categories and channels to the groups, send personal and group messages, change personal and group profile photos, block users, change his activity status and see friends activity status.
 <br></br>
