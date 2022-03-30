@@ -1,0 +1,9 @@
+build
+bin
+*.log
+*.lck
+*.1
+*.2
+*.3
+src/main/java/com/server/util/database_prod.properties
+src/main/java/com/ong/session/database_prod.properties

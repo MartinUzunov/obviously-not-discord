@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefWidth="865.0" styleClass="background" stylesheets="@../../CSS/HomepageElements/online_friends.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ong.controllers.HomepageElements.OnlineFriendsController">
+    <children>
+        <HBox>
+            <children>
+                <Label text="ONLINE - ">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+               <styleClass>
+                  <String fx:value="background" />
+                  <String fx:value="text" />
+               </styleClass>
+                </Label>
+                <Label fx:id="numberOfOnlineUsers" text="0">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+               <styleClass>
+                  <String fx:value="background" />
+                  <String fx:value="text" />
+               </styleClass>
+                </Label>
+            </children>
+        </HBox>
+        <Separator prefWidth="200.0">
+            <padding>
+                <Insets top="3.0" />
+            </padding>
+        </Separator>
+        <ListView fx:id="onlineFriendsListView" prefHeight="743.0" prefWidth="820.0">
+         <styleClass>
+            <String fx:value="background" />
+            <String fx:value="list-view" />
+         </styleClass></ListView>
+    </children>
+    <padding>
+        <Insets left="20.0" right="20.0" top="5.0" />
+    </padding>
+</VBox>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox spacing="1.0" styleClass="background" stylesheets="@../../CSS/HomepageElements/friend_requests.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ong.controllers.HomepageElements.FriendRequestsController">
+   <children>
+      <HBox alignment="CENTER_LEFT" styleClass="top">
+         <children>
+            <VBox prefHeight="105.0" prefWidth="1171.0">
+               <children>
+                  <Label text="Add Friend" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <HBox spacing="10.0">
+                     <children>
+                        <TextField fx:id="addFriendField" prefHeight="49.0" prefWidth="722.0" promptText="Enter Username" styleClass="text-area">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="sendFriendRequestButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Send Friend Request">
+                           <font>
+                              <Font name="Times New Roman Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Label fx:id="infoLabel" text="Invalid Username" textFill="RED" visible="false">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <HBox.margin>
+                  <Insets bottom="20.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox>
+         <children>
+            <Label prefHeight="34.0" prefWidth="286.0" text="Friend and Group Requests" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="19.0" />
+               </font>
+            </Label>
+            <ListView fx:id="requests" prefHeight="595.0" prefWidth="1171.0" styleClass="background" />
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" />
+   </padding>
+</VBox>

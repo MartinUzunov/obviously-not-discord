@@ -1,0 +1,30 @@
+.background {
+    -fx-background-image: url("./../../Images/login_background.png");
+    -fx-background-size: 100%;
+    -fx-min-width: 100%;
+    -fx-height: 100%;
+}
+
+.text-fields{
+    -fx-background-color:  #303338;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.date-picker{
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: white;
+    -jfx-unfocus-color: white;
+}
+
+.jfx-date-picker .text-field{
+    -fx-control-inner-background: #303338;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: white;
+    -jfx-unfocus-color: white;
+}
+
+.button{
+    -fx-background-color: #5865f2;
+    -fx-text-fill: white;
+}

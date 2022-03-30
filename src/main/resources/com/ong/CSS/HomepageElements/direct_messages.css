@@ -1,0 +1,22 @@
+.background{
+    -fx-background-color: #2f3136;
+}
+
+.text{
+    -fx-text-fill: #898d92;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+.list-view {
+    -fx-selection-bar: #393c42 ;
+    -fx-selection-bar-non-focused: #393c42 ;
+}
+
+.text-fields{
+    -fx-text-fill: #898d92;
+    -fx-font-weight: bold;
+}
+
+
+

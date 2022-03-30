@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fillWidth="false" spacing="1.0" styleClass="middle" stylesheets="@../CSS/private_chat.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ong.controllers.PrivateChatController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="71.0" prefWidth="1270.0" styleClass="top">
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+         <children>
+            <Label prefHeight="57.0" prefWidth="46.0" text="\@" textFill="#40444b">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Label fx:id="friendUsername" styleClass="labels" text="Username">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <ScrollPane fx:id="scrollPane" fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="595.0" prefWidth="1171.0">
+         <content>
+            <VBox fx:id="chatMessages" alignment="BOTTOM_LEFT" prefHeight="593.0" prefWidth="1270.0" styleClass="middle">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding></VBox>
+         </content>
+         <styleClass>
+            <String fx:value="middle" />
+            <String fx:value="scroll-pane" />
+         </styleClass>
+      </ScrollPane>
+      <HBox alignment="CENTER_LEFT" styleClass="bottom">
+         <children>
+            <TextArea fx:id="textArea" maxHeight="74.0" maxWidth="Infinity" prefHeight="0.0" prefWidth="1231.0" promptText="Message" styleClass="text-area" wrapText="true" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets bottom="20.0" />
+                       </HBox.margin>
+            </TextArea>
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

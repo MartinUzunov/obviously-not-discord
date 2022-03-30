@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="262.0" prefWidth="400.0" styleClass="background" stylesheets="@../../CSS/popups.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ong.controllers.PopUps.CreateGroupPopupController">
+   <children>
+      <HBox fx:id="closeHBox" alignment="TOP_RIGHT" prefHeight="17.0" prefWidth="400.0">
+         <padding>
+            <Insets right="10.0" top="10.0" />
+         </padding></HBox>
+      <HBox alignment="CENTER" prefHeight="57.0" prefWidth="400.0">
+         <children>
+            <Label fx:id="headerLabel" text="Create New Group" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <VBox prefHeight="87.0" prefWidth="360.0">
+         <children>
+            <Label prefHeight="31.0" prefWidth="152.0" text="GROUP NAME" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin></Label>
+            <TextField fx:id="groupNameField" />
+            <Label fx:id="invalidGroupText" prefHeight="18.0" prefWidth="216.0" text="Invalid group name" textFill="RED" visible="false">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets left="20.0" right="20.0" top="20.0" />
+         </VBox.margin>
+      </VBox>
+      <HBox alignment="BOTTOM_RIGHT" prefHeight="86.0" prefWidth="400.0" spacing="20.0">
+         <children>
+            <Button fx:id="createButton" mnemonicParsing="false" prefHeight="42.0" prefWidth="77.0" text="Create" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" right="20.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

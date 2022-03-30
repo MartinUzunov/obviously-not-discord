@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" styleClass="background" stylesheets="@../../CSS/popups.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ong.controllers.PopUps.CreateCategoryAndChannelPopupController">
+   <children>
+      <HBox fx:id="closeHBox" alignment="TOP_RIGHT" prefHeight="17.0" prefWidth="400.0">
+         <padding>
+            <Insets right="10.0" top="10.0" />
+         </padding></HBox>
+      <HBox alignment="CENTER" prefHeight="57.0" prefWidth="400.0">
+         <children>
+            <Label text="Create Category And Channel" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_CENTER" prefHeight="165.0" prefWidth="400.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="154.0" prefWidth="399.0">
+               <children>
+                  <Label text="Category Name" textFill="WHITE">
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="categoryTextField" />
+                  <Label fx:id="invalidCategory" prefHeight="18.0" prefWidth="118.0" text="Invalid Category" textFill="RED" visible="false">
+                     <VBox.margin>
+                        <Insets right="230.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label layoutX="170.0" layoutY="10.0" text="Channel Name" textFill="WHITE">
+                     <padding>
+                        <Insets top="40.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="channelTextField" />
+                  <Label fx:id="invalidChannel" layoutX="35.0" layoutY="73.0" prefHeight="18.0" prefWidth="118.0" text="Invalid Channel" textFill="RED" visible="false">
+                     <VBox.margin>
+                        <Insets right="230.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="20.0" right="20.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Button fx:id="submitButton" mnemonicParsing="false" text="Submit" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" right="20.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

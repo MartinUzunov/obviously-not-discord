@@ -1,0 +1,7 @@
+.background{
+    -fx-background-color: #202225;
+}
+
+.separator *.line {
+    -fx-border-width: 0.5;
+}

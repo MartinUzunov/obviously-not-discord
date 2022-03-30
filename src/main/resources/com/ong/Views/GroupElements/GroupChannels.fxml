@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="mainContainerVBox" prefHeight="676.0" prefWidth="250.0" styleClass="background" stylesheets="@../../CSS/GroupElements/group_channels.css" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ong.controllers.GroupElements.GroupChannelsController">
+    <children>
+      <HBox fx:id="groupNameHBox" alignment="CENTER_LEFT" prefHeight="250.0" prefWidth="250.0" styleClass="group-name">
+         <children>
+            <Label fx:id="groupNameLabel" prefHeight="60.0" prefWidth="250.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font></Label>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="10.0" right="10.0" />
+         </padding></HBox>
+      <TreeView fx:id="treeView" prefHeight="826.0" prefWidth="250.0" styleClass="background" />
+    </children>
+</VBox>

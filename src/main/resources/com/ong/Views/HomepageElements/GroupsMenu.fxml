@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<ScrollPane fx:id="groupsMenuScrollPane" hbarPolicy="NEVER" prefHeight="60.0" prefWidth="1920.0" styleClass="background" stylesheets="@../../CSS/HomepageElements/groups_menu.css" vbarPolicy="NEVER" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ong.controllers.GroupsMenuController"/>

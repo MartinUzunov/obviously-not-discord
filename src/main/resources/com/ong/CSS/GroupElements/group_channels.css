@@ -1,0 +1,60 @@
+.background{
+    -fx-background-color: #2f3136;
+}
+
+.tree-view .scroll-bar:vertical {
+    -fx-opacity: 0;
+}
+
+.tree-view *.scroll-bar:horizontal,
+.tree-view *.scroll-bar:horizontal *.track,
+.tree-view *.scroll-bar:horizontal *.track-background,
+.tree-view *.scroll-bar:horizontal *.thumb,
+.tree-view *.scroll-bar:horizontal *.increment-button,
+.tree-view *.scroll-bar:horizontal *.decrement-button,
+.tree-view *.scroll-bar:horizontal *.increment-arrow,
+.tree-view *.scroll-bar:horizontal *.decrement-arrow {
+    -fx-base: transparent;
+    -fx-background-color: white;
+    -fx-opacity: 0;
+    -fx-padding: 0;
+}
+
+.tree-cell{
+    -fx-background-color: #2f3136;
+    -fx-selection-bar: #393c42 ;
+    -fx-selection-bar-non-focused: #393c42 ;
+    -fx-text-fill: #71757c;
+    -fx-font-weight: bold ;
+    -fx-font-size: 14px;
+}
+
+.tree-cell:selected {
+    -fx-text-fill: white;
+}
+
+.tree-cell > .tree-disclosure-node > .arrow  {
+    -fx-background-color: #71757c;
+}
+.tree-cell:expanded > .tree-disclosure-node > .arrow {
+    -fx-background-color: white;
+}
+
+.user-info{
+    -fx-background-color: #292b2f;
+    -fx-font-weight: bold;
+}
+
+.styled-text-area .text {
+    -fx-fill: white;
+}
+
+.online-status .text{
+    -fx-fill: grey;
+    -fx-font-size: 12px;
+}
+
+.group-name{
+    -fx-border-color: black;
+    -fx-border-width: 0 0 1 0;
+}

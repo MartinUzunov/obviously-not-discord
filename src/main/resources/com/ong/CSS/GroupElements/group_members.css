@@ -1,0 +1,23 @@
+.add-friend-button{
+    -fx-background-color: #3ba55d;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.background{
+    -fx-background-color: #36393f;
+}
+
+.list-view {
+    -fx-background-color:  #36393f;
+    -fx-border-color: #ffffff;
+    -fx-border-width:  0 0 0 0.1;
+    -fx-selection-bar: transparent;
+    -fx-selection-bar-non-focused: transparent;
+}
+
+.text{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}

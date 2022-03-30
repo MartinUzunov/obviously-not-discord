@@ -1,0 +1,18 @@
+.styled-text-area .text {
+    -fx-fill: white;
+}
+
+.online-status .text{
+    -fx-fill: grey;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+}
+
+.online-status-hovered .text{
+    -fx-fill: white;
+    -fx-font-size: 10px;
+}
+
+.background{
+    -fx-background-color: #292b2f;
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="vBox" styleClass="background" stylesheets="@../../CSS/HomepageElements/direct_messages.css" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ong.controllers.HomepageElements.DirectMessagesController">
+    <children>
+        <ListView fx:id="friendsTab" prefHeight="55.0" prefWidth="248.0">
+         <styleClass>
+            <String fx:value="background" />
+            <String fx:value="list-view" />
+         </styleClass>
+      </ListView>
+        <Label alignment="CENTER" contentDisplay="CENTER" styleClass="text-fields" text="PRIVATE MESSAGES" textAlignment="CENTER" textFill="WHITE">
+            <padding>
+                <Insets left="20.0" />
+            </padding>
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <ListView fx:id="DMsListView" fixedCellSize="50.0" prefHeight="621.0" prefWidth="248.0">
+         <styleClass>
+            <String fx:value="background" />
+            <String fx:value="list-view" />
+         </styleClass>
+      </ListView>
+    </children>
+</VBox>

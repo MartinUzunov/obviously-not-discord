@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" styleClass="background" stylesheets="@../../CSS/popups.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ong.controllers.PopUps.ChangePhotoPopupController">
+   <children>
+      <HBox fx:id="closeHBox" alignment="TOP_RIGHT" prefHeight="17.0" prefWidth="400.0">
+         <padding>
+            <Insets right="10.0" top="10.0" />
+         </padding></HBox>
+      <HBox alignment="CENTER" prefHeight="57.0" prefWidth="400.0">
+         <children>
+            <Label fx:id="headerLabel" text="Change Profile Photo" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_CENTER" prefHeight="165.0" prefWidth="400.0">
+         <children>
+            <ImageView fx:id="loadedImage" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Button fx:id="choosePhotoButton" mnemonicParsing="false" text="ChoosePhoto" />
+            <Button fx:id="saveChangesButton" mnemonicParsing="false" text="Save Changes" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

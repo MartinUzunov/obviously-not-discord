@@ -1,0 +1,51 @@
+.top{
+    -fx-background-color: #36393f;
+    -fx-border-color: black;
+    -fx-border-width: 0 0 0.5 0;
+    -fx-text-fill: white;
+    -fx-font-size: 40px;
+}
+
+.labels{
+    -fx-text-fill: white;
+    -fx-font-size: 40px;
+}
+
+.middle{
+    -fx-background-color: #36393f;
+}
+
+.bottom{
+    -fx-background-color: #36393f;
+}
+
+.text-area {
+    -fx-background-color: #40444b;
+    -fx-background-radius: 18;
+    -fx-border-radius: 18;
+    -fx-border-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 22px;
+}
+
+.scroll-pane .scroll-bar:vertical {
+    -fx-opacity: 0;
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+.text-area .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-bar:vertical {
+    -fx-opacity: 0;
+}
+
+.styled-text-area .text {
+    -fx-fill: white;
+}

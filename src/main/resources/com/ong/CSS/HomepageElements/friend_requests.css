@@ -1,0 +1,33 @@
+.background{
+    -fx-background-color: #36393f;
+}
+
+.top{
+    -fx-background-color: #36393f;
+    -fx-border-color: black;
+    -fx-border-width: 0 0 1 0;
+    -fx-text-fill: white;
+}
+
+.button{
+    -fx-background-color: #3ba55d;
+    -fx-text-fill: white;
+}
+
+.text-area {
+    -fx-background-color: #40444b;
+    -fx-border-color: transparent;
+    -fx-text-fill: white;
+    -fx-font-size: 22px;
+}
+
+.list-view {
+    -fx-selection-bar: #393c42 ;
+    -fx-selection-bar-non-focused: #393c42 ;
+}
+
+.text-fields{
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+    -fx-text-fill: #898d92;
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefWidth="310.0" styleClass="background" stylesheets="@../../CSS/GroupElements/group_members.css" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ong.controllers.GroupElements.GroupMembersController">
+    <children>
+        <Label styleClass="background" text="Members" textFill="WHITE">
+            <font>
+                <Font name="Times New Roman Bold" size="24.0" />
+            </font>
+            <VBox.margin>
+                <Insets top="5.0" />
+            </VBox.margin>
+            <padding>
+                <Insets left="20.0" />
+            </padding>
+        </Label>
+        <ListView fx:id="membersListView" prefHeight="698.0" prefWidth="286.0" />
+        <Button fx:id="addMemberButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="85.0" prefWidth="286.0" styleClass="add-friend-button" text="Add Member">
+            <padding>
+                <Insets left="20.0" right="20.0" />
+            </padding>
+            <font>
+                <Font size="16.0" />
+            </font></Button>
+    </children>
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+    <padding>
+        <Insets left="20.0" />
+    </padding>
+</VBox>

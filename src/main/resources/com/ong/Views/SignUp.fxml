@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="647.0" prefWidth="875.0" styleClass="background" stylesheets="@../CSS/login_register_system.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ong.controllers.SignUpController">
+   <children>
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="452.0" style="-fx-background-color: #36393f;" stylesheets="@../CSS/login_register_system.css">
+         <children>
+            <HBox alignment="CENTER" prefHeight="78.0" prefWidth="452.0">
+               <children>
+                  <Label alignment="BASELINE_CENTER" contentDisplay="TEXT_ONLY" prefHeight="84.0" prefWidth="336.0" text="Create an Account" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="39.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <VBox prefHeight="78.0" prefWidth="452.0">
+               <children>
+                  <Label alignment="BASELINE_LEFT" text="EMAIL" textFill="#afb1b4">
+                     <font>
+                        <Font name="Times New Roman Bold" size="13.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="6.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="registerEmail" prefHeight="26.0" prefWidth="348.0" styleClass="text-fields" stylesheets="@../CSS/login_register_system.css" />
+                  <Label fx:id="invalidEmail" text="Invalid Email" textFill="RED" visible="false" />
+               </children>
+               <padding>
+                  <Insets left="40.0" right="40.0" />
+               </padding>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="88.0" prefHeight="78.0" prefWidth="452.0">
+               <children>
+                  <Label alignment="BASELINE_LEFT" text="USERNAME" textFill="#afb1b4">
+                     <font>
+                        <Font name="Times New Roman Bold" size="13.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="6.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="registerUsername" prefHeight="26.0" prefWidth="348.0" styleClass="text-fields" />
+                  <Label fx:id="invalidUsername" text="Invalid Username" textFill="RED" visible="false" />
+               </children>
+               <padding>
+                  <Insets left="40.0" right="40.0" />
+               </padding>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="188.0" prefHeight="78.0" prefWidth="452.0">
+               <children>
+                  <Label alignment="BASELINE_LEFT" text="PASSWORD" textFill="#afb1b4">
+                     <font>
+                        <Font name="Times New Roman Bold" size="13.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="6.0" />
+                     </padding>
+                  </Label>
+                  <PasswordField fx:id="registerPassword" styleClass="text-fields" />
+                  <Label fx:id="invalidPassword" text="Invalid Password" textFill="RED" visible="false" />
+               </children>
+               <padding>
+                  <Insets left="40.0" right="40.0" />
+               </padding>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="245.0" prefHeight="78.0" prefWidth="452.0">
+               <children>
+                  <Label alignment="BASELINE_LEFT" text="DATE OF BIRTH" textFill="#afb1b4">
+                     <font>
+                        <Font name="Times New Roman Bold" size="13.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="6.0" />
+                     </padding>
+                  </Label>
+                  <DatePicker fx:id="registerDate" promptText="Select Date" styleClass="jfx-date-picker" />
+                  <Label fx:id="invalidDate" text="Invalid Birth Date" textFill="RED" visible="false" />
+               </children>
+               <padding>
+                  <Insets left="40.0" right="40.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="10.0" layoutY="324.0" prefHeight="56.0" prefWidth="452.0">
+               <padding>
+                  <Insets left="40.0" right="40.0" />
+               </padding>
+               <children>
+                  <Button fx:id="registerButton" mnemonicParsing="false" prefHeight="41.0" prefWidth="372.0" text="REGISTER" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <HBox prefHeight="20.0" prefWidth="452.0">
+               <children>
+                  <Hyperlink fx:id="alreadyHaveAccount" text="Already have an account?" />
+               </children>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>

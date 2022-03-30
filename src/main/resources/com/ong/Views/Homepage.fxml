@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ong.controllers.HomepageController">
+   <children>
+      <StackPane fx:id="stackPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="796.0" prefWidth="1270.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <BorderPane fx:id="borderPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="796.0" prefWidth="1270.0" styleClass="online-friends-background" stylesheets="@../CSS/homepage.css">
+</BorderPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

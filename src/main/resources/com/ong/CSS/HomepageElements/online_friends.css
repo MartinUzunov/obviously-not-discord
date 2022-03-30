@@ -1,0 +1,14 @@
+.list-view {
+    -fx-selection-bar: transparent ;
+    -fx-selection-bar-non-focused: transparent ;
+}
+
+.background{
+    -fx-background-color: #36393f;
+}
+
+.text{
+    -fx-text-fill: white/*#898d92*/;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
