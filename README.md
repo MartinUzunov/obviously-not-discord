@@ -25,6 +25,8 @@ Fourth, start the server by running the Server class.
 You start the client by executing the Main class.
 - A client cannot be started if the server is shut down.
 - It is possible to start multiple instances of the client on a single machine.
+
+You need to setup local MySql database in order to run the program to its full potential. You can use this database [structure](https://github.com/MartinUzunov/obviously-not-discord/blob/master/database_structure.xml).
 <br></br>
 
 ## License
