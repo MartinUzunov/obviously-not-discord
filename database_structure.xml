@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="obviously-not-discord" collation="utf8_unicode_ci" charset="utf8">
+            <pma:table name="groups">
+                CREATE TABLE `groups` (
+                  `group_id` int(11) NOT NULL AUTO_INCREMENT,
+                  `group_name` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
+                  `group_photo` longblob DEFAULT NULL,
+                  PRIMARY KEY (`group_id`)
+                ) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+            </pma:table>
+            <pma:table name="group_channels">
+                CREATE TABLE `group_channels` (
+                  `group_name` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
+                  `category` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
+                  `channel_name` varchar(32) COLLATE utf8_unicode_ci NOT NULL
+                ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+            </pma:table>
+            <pma:table name="messages">
+                CREATE TABLE `messages` (
+                  `message_id` int(11) NOT NULL AUTO_INCREMENT,
+                  `to_username` varchar(32) COLLATE utf8_unicode_ci DEFAULT NULL,
+                  `from_username` varchar(32) COLLATE utf8_unicode_ci DEFAULT NULL,
+                  `to_group` varchar(32) COLLATE utf8_unicode_ci DEFAULT NULL,
+                  `to_group_category` varchar(32) COLLATE utf8_unicode_ci DEFAULT NULL,
+                  `to_group_channel` varchar(32) COLLATE utf8_unicode_ci DEFAULT NULL,
+                  `message` varchar(500) COLLATE utf8_unicode_ci DEFAULT NULL,
+                  `date_and_time` timestamp NULL DEFAULT NULL,
+                  PRIMARY KEY (`message_id`)
+                ) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+            </pma:table>
+            <pma:table name="users">
+                CREATE TABLE `users` (
+                  `user_id` int(11) NOT NULL AUTO_INCREMENT,
+                  `username` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
+                  `email` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
+                  `password` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
+                  `birth_date` varchar(32) COLLATE utf8_unicode_ci DEFAULT NULL,
+                  `profile_photo` longblob DEFAULT NULL,
+                  `preferred_status` varchar(32) COLLATE utf8_unicode_ci DEFAULT NULL,
+                  PRIMARY KEY (`user_id`)
+                ) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+            </pma:table>
+            <pma:table name="user_in_group">
+                CREATE TABLE `user_in_group` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `user_id` int(11) NOT NULL,
+                  `group_id` int(11) NOT NULL,
+                  `role` varchar(32) COLLATE utf8_unicode_ci DEFAULT NULL,
+                  `type` varchar(32) COLLATE utf8_unicode_ci DEFAULT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+            </pma:table>
+            <pma:table name="user_relationship">
+                CREATE TABLE `user_relationship` (
+                  `relationship_id` int(11) NOT NULL AUTO_INCREMENT,
+                  `first_user_id` int(11) NOT NULL,
+                  `second_user_id` int(11) NOT NULL,
+                  `open_dm` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
+                  `type` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
+                  PRIMARY KEY (`relationship_id`)
+                ) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+</pma_xml_export>
